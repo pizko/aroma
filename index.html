@@ -81,26 +81,51 @@
   </header>
 
   <main id="main">
-    <section class="hero" aria-labelledby="hero-title">
+    <section class="hero" data-hero-scene="wholesale" aria-labelledby="hero-title">
       <div class="hero-copy">
-        <p class="eyebrow">Оптовые поставки · СТМ · Парфюмерное ателье</p>
-        <h1 id="hero-title">Ароматические коллекции для дома и бизнеса</h1>
-        <p class="hero-intro">Каталог готовой продукции и сопровождение проектов под собственной маркой — от выбора аромата и тары до упаковки готовой партии.</p>
-        <div class="hero-actions">
-          <a class="button button-dark" href="#catalog">Смотреть каталог</a>
-          <a class="text-link" href="#private-label">Обсудить выпуск под СТМ <span aria-hidden="true">↗</span></a>
-        </div>
-        <dl class="hero-facts">
-          <div><dt>15+</dt><dd>категорий продукции</dd></div>
-          <div><dt>Россия и СНГ</dt><dd>география поставок</dd></div>
-        </dl>
+        <p class="eyebrow">Ароматический дом · Москва</p>
+        <h1 id="hero-title">Опт, своя марка и создание ароматов</h1>
+        <p class="hero-intro">Готовые коллекции, выпуск продукции под вашей маркой и разработка индивидуальных ароматов.</p>
+
+        <nav class="direction-list" aria-label="Направления работы">
+          <a class="direction-link is-active" href="#catalog" data-hero-target="wholesale">
+            <span class="direction-index">01</span>
+            <span class="direction-copy"><strong>Закупить оптом</strong><small>Готовые свечи, диффузоры и наборы</small></span>
+            <span class="direction-arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="direction-link" href="#private-label" data-hero-target="private-label">
+            <span class="direction-index">02</span>
+            <span class="direction-copy"><strong>Выпустить под своей маркой</strong><small>Аромат, упаковка и производство</small></span>
+            <span class="direction-arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="direction-link" href="#atelier" data-hero-target="fragrance">
+            <span class="direction-index">03</span>
+            <span class="direction-copy"><strong>Создать аромат</strong><small>Для человека, бренда или пространства</small></span>
+            <span class="direction-arrow" aria-hidden="true">↗</span>
+          </a>
+        </nav>
       </div>
 
-      <div class="hero-stage" aria-label="Подарочный набор и аромадиффузор Whispy">
-        <div class="stage-number">Collection / 01</div>
-        <img class="stage-box" src="assets/opt-set3.png" alt="Подарочная коробка Whispy с аромадиффузором">
-        <img class="stage-bottle" src="assets/opt-set2.png" alt="Аромадиффузор Whispy">
-        <p class="stage-caption">Готовые коллекции<br>и индивидуальная упаковка</p>
+      <div class="hero-stage" aria-hidden="true">
+        <div class="stage-scene stage-wholesale is-active" data-hero-panel="wholesale">
+          <p class="stage-number">01 / Оптовые поставки</p>
+          <div class="stage-card"><img src="assets/opt-hero.jpg" alt="Свеча Stoneglow Plum Blossom and Musk в фирменной коробке"></div>
+          <img class="stage-product stage-product-wholesale" src="assets/opt-set2.png" alt="Аромадиффузор Whispy">
+          <p class="stage-caption">Готовые коллекции<br>для розницы и бизнеса</p>
+        </div>
+
+        <div class="stage-scene stage-private" data-hero-panel="private-label">
+          <p class="stage-number">02 / Собственная марка</p>
+          <img class="stage-package" src="assets/opt-set3.png" alt="Подарочная упаковка Whispy с аромадиффузором">
+          <img class="stage-product stage-product-private" src="assets/whispy-spray.png" alt="Ароматический спрей Whispy">
+          <p class="stage-caption">От выбора аромата<br>до готовой партии</p>
+        </div>
+
+        <div class="stage-scene stage-fragrance" data-hero-panel="fragrance">
+          <p class="stage-number">03 / Парфюмерное ателье</p>
+          <img class="stage-perfumer" src="assets/hanna-2.png" alt="Парфюмер Ханна Шаркань с флаконом авторского аромата">
+          <p class="stage-caption">Для человека, бренда<br>и пространства</p>
+        </div>
       </div>
     </section>
 

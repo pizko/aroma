@@ -26,6 +26,28 @@ filterButtons.forEach((button) => {
   });
 });
 
+const hero = document.querySelector('.hero');
+const directionLinks = [...document.querySelectorAll('[data-hero-target]')];
+const heroPanels = [...document.querySelectorAll('[data-hero-panel]')];
+
+function setHeroScene(scene) {
+  if (!hero || !scene) return;
+  hero.dataset.heroScene = scene;
+  directionLinks.forEach((link) => {
+    link.classList.toggle('is-active', link.dataset.heroTarget === scene);
+  });
+  heroPanels.forEach((panel) => {
+    panel.classList.toggle('is-active', panel.dataset.heroPanel === scene);
+  });
+}
+
+directionLinks.forEach((link) => {
+  const activate = () => setHeroScene(link.dataset.heroTarget);
+  link.addEventListener('mouseenter', activate);
+  link.addEventListener('focus', activate);
+  link.addEventListener('pointerdown', activate);
+});
+
 const revealItems = [...document.querySelectorAll('.reveal')];
 const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
