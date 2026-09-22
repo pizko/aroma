@@ -8,6 +8,7 @@
   <meta name="robots" content="noindex,nofollow">
   <meta name="theme-color" content="#191817">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23431319'/%3E%3Cpath d='M16 13h32v38H16z' fill='none' stroke='%23f2eee5' stroke-width='2'/%3E%3Ccircle cx='32' cy='32' r='9' fill='none' stroke='%23bda478' stroke-width='2'/%3E%3C/svg%3E">
+  <script>document.documentElement.classList.add('has-js');</script>
   <link rel="stylesheet" href="styles.css">
   <script type="application/ld+json">
   {
@@ -104,7 +105,7 @@
     </section>
 
     <section class="catalog section" id="catalog" aria-labelledby="catalog-title">
-      <div class="section-heading">
+      <div class="section-heading reveal">
         <div>
           <p class="eyebrow">Каталог</p>
           <h2 id="catalog-title">Продукция для разных форматов продаж</h2>
@@ -112,7 +113,7 @@
         <p>Категории собраны из действующего ассортимента. Цены и наличие предоставляются по запросу.</p>
       </div>
 
-      <div class="filters" role="group" aria-label="Фильтр категорий">
+      <div class="filters reveal" role="group" aria-label="Фильтр категорий">
         <button class="filter is-active" type="button" data-filter="all">Все</button>
         <button class="filter" type="button" data-filter="home">Для дома</button>
         <button class="filter" type="button" data-filter="gift">Подарки</button>
@@ -120,7 +121,7 @@
       </div>
 
       <div class="product-grid">
-        <article class="product-card product-card-featured" data-category="home">
+        <article class="product-card product-card-featured reveal" data-category="home">
           <div class="product-visual burgundy">
             <img src="assets/whispy-diffuser.png" alt="Диффузор Whispy с палочками">
           </div>
@@ -130,7 +131,7 @@
           </div>
         </article>
 
-        <article class="product-card" data-category="home">
+        <article class="product-card reveal" data-category="home">
           <div class="product-visual ivory">
             <img src="assets/opt-hero.jpg" alt="Ароматическая свеча Stoneglow в фирменной коробке">
           </div>
@@ -140,7 +141,7 @@
           </div>
         </article>
 
-        <article class="product-card" data-category="home care">
+        <article class="product-card reveal" data-category="home care">
           <div class="product-visual amber">
             <img src="assets/whispy-spray.png" alt="Спрей Whispy для текстиля">
           </div>
@@ -150,7 +151,7 @@
           </div>
         </article>
 
-        <article class="product-card" data-category="gift">
+        <article class="product-card reveal" data-category="gift">
           <div class="product-visual sand">
             <img src="assets/whispy-card-1.jpg" alt="Подарочная подборка продукции Whispy">
           </div>
@@ -160,7 +161,7 @@
           </div>
         </article>
 
-        <article class="product-card" data-category="gift home">
+        <article class="product-card reveal" data-category="gift home">
           <div class="product-visual smoke">
             <img src="assets/whispy-auto.png" alt="Автомобильный ароматизатор Whispy">
           </div>
@@ -170,7 +171,7 @@
           </div>
         </article>
 
-        <article class="product-card product-card-text" data-category="care">
+        <article class="product-card product-card-text reveal" data-category="care">
           <div class="product-visual list-visual">
             <p>Жидкое и твёрдое мыло</p>
             <p>Крем для рук</p>
@@ -186,7 +187,7 @@
     </section>
 
     <section class="brands section" id="brands" aria-labelledby="brands-title">
-      <div class="section-heading section-heading-light">
+      <div class="section-heading section-heading-light reveal">
         <div>
           <p class="eyebrow">Бренды и направления</p>
           <h2 id="brands-title">Три специализации в одной системе</h2>
@@ -195,7 +196,7 @@
       </div>
 
       <div class="brand-grid">
-        <article class="brand-card brand-stoneglow">
+        <article class="brand-card brand-stoneglow reveal">
           <div class="brand-image"><img src="assets/opt-hero.jpg" alt="Свеча Stoneglow Plum Blossom and Musk"></div>
           <p class="brand-index">01 / Великобритания</p>
           <h3>Stoneglow</h3>
@@ -203,7 +204,7 @@
           <a href="#contacts">Запросить каталог <span aria-hidden="true">↗</span></a>
         </article>
 
-        <article class="brand-card brand-whispy">
+        <article class="brand-card brand-whispy reveal">
           <div class="brand-image"><img src="assets/opt-set3.png" alt="Подарочный набор Whispy"></div>
           <p class="brand-index">02 / Собственная коллекция</p>
           <h3>Whispy</h3>
@@ -211,7 +212,7 @@
           <a href="#catalog">Смотреть категории <span aria-hidden="true">↗</span></a>
         </article>
 
-        <article class="brand-card brand-hanna">
+        <article class="brand-card brand-hanna reveal">
           <div class="brand-image"><img src="assets/hanna-2.png" alt="Парфюмер Ханна Шаркань с флаконом духов"></div>
           <p class="brand-index">03 / Парфюмерное ателье</p>
           <h3>Hanna Sharkan</h3>
@@ -222,27 +223,30 @@
     </section>
 
     <section class="private-label" id="private-label" aria-labelledby="private-title">
-      <div class="private-intro">
+      <div class="private-intro reveal">
         <p class="eyebrow">Контрактное производство</p>
         <h2 id="private-title">Линейка ароматов под вашей маркой</h2>
         <p>Формат проекта определяется задачей, ценовым уровнем и составом будущей коллекции. Можно работать с выбранными ароматами и готовой тарой или собирать решение с индивидуальными элементами.</p>
         <a class="button button-light" href="#contacts">Обсудить проект</a>
+        <figure class="private-statue reveal" aria-hidden="true">
+          <img src="assets/classical-statue.png" alt="">
+        </figure>
       </div>
 
       <ol class="process-list">
-        <li><span>01</span><div><h3>Состав коллекции</h3><p>Выбираем виды продукции и количество ароматов.</p></div></li>
-        <li><span>02</span><div><h3>Ценовой уровень</h3><p>Определяем ориентиры для аромата, тары и упаковки.</p></div></li>
-        <li><span>03</span><div><h3>Дизайн и образцы</h3><p>Согласовываем этикетку, упаковку и, при необходимости, пилотную партию.</p></div></li>
-        <li><span>04</span><div><h3>Производство</h3><p>Комплектуем, маркируем, упаковываем и готовим заказ к поставке.</p></div></li>
+        <li class="reveal"><span>01</span><div><h3>Состав коллекции</h3><p>Выбираем виды продукции и количество ароматов.</p></div></li>
+        <li class="reveal"><span>02</span><div><h3>Ценовой уровень</h3><p>Определяем ориентиры для аромата, тары и упаковки.</p></div></li>
+        <li class="reveal"><span>03</span><div><h3>Дизайн и образцы</h3><p>Согласовываем этикетку, упаковку и, при необходимости, пилотную партию.</p></div></li>
+        <li class="reveal"><span>04</span><div><h3>Производство</h3><p>Комплектуем, маркируем, упаковываем и готовим заказ к поставке.</p></div></li>
       </ol>
 
       <div class="production-options">
-        <article>
+        <article class="reveal">
           <p>Вариант 01</p>
           <h3>Производство в России</h3>
           <p>Подбор аромата, тары, этикетки и упаковки с комплектацией готовой продукции.</p>
         </article>
-        <article>
+        <article class="reveal">
           <p>Вариант 02</p>
           <h3>На базе Stoneglow</h3>
           <p>Выбор изделий и ароматов из каталога фабрики с дальнейшим брендированием проекта.</p>
@@ -251,11 +255,11 @@
     </section>
 
     <section class="atelier section" id="atelier" aria-labelledby="atelier-title">
-      <div class="atelier-image">
+      <div class="atelier-image reveal reveal-left">
         <img src="assets/hanna-1.png" alt="Ханна Шаркань в парфюмерном ателье">
         <span>Москва / Парфюмерное ателье</span>
       </div>
-      <div class="atelier-copy">
+      <div class="atelier-copy reveal">
         <p class="eyebrow">Hanna Sharkan</p>
         <h2 id="atelier-title">Ателье персональной парфюмерии</h2>
         <p class="lead">Отдельное направление для частных клиентов, мероприятий и брендов, которым требуется собственная парфюмерная композиция.</p>
@@ -269,30 +273,30 @@
     </section>
 
     <section class="about section" id="about" aria-labelledby="about-title">
-      <div class="about-title">
+      <div class="about-title reveal reveal-left">
         <p class="eyebrow">О компании</p>
         <h2 id="about-title">Опт, производство и работа с брендами</h2>
       </div>
-      <div class="about-copy">
+      <div class="about-copy reveal">
         <p>На одной площадке собраны готовые коллекции аромапродукции, услуги контрактного производства и парфюмерное ателье. Для оптовых клиентов доступны каталоги и подбор продукции под формат бизнеса.</p>
         <p>Условия, сроки, минимальные партии и комплектация рассчитываются для конкретного запроса. На сайте не публикуются неподтверждённые обещания и универсальные расчёты доходности.</p>
       </div>
     </section>
 
     <section class="contacts" id="contacts" aria-labelledby="contacts-title">
-      <div class="contacts-heading">
+      <div class="contacts-heading reveal">
         <p class="eyebrow">Контакты</p>
         <h2 id="contacts-title">Расскажите, какой проект вы планируете</h2>
         <p>Подберём каталог и уточним, какие данные нужны для расчёта.</p>
       </div>
       <div class="contact-grid">
-        <article>
+        <article class="reveal">
           <p>Опт и производство</p>
           <address>Москва, Каширское шоссе, 122</address>
           <a href="tel:+74955442144">+7 (495) 544-21-44</a>
           <a href="mailto:info@opt-aroma.ru">info@opt-aroma.ru</a>
         </article>
-        <article>
+        <article class="reveal">
           <p>Парфюмерное ателье</p>
           <address>Москва, Большая Филёвская улица, 17</address>
           <a href="tel:+79651879194">+7 (965) 187-91-94</a>
