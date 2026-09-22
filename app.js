@@ -28,6 +28,7 @@ filterButtons.forEach((button) => {
 
 const hero = document.querySelector('.hero');
 const directionLinks = [...document.querySelectorAll('[data-hero-target]')];
+const heroNavLinks = [...document.querySelectorAll('[data-hero-nav]')];
 const heroPanels = [...document.querySelectorAll('[data-hero-panel]')];
 
 function setHeroScene(scene) {
@@ -46,6 +47,12 @@ directionLinks.forEach((link) => {
   link.addEventListener('mouseenter', activate);
   link.addEventListener('focus', activate);
   link.addEventListener('pointerdown', activate);
+});
+
+heroNavLinks.forEach((link) => {
+  const activate = () => setHeroScene(link.dataset.heroNav);
+  link.addEventListener('mouseenter', activate);
+  link.addEventListener('focus', activate);
 });
 
 const revealItems = [...document.querySelectorAll('.reveal')];
