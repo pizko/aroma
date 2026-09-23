@@ -7,8 +7,8 @@
   --wine-deep: #2a0c10;
   --brass: #bda478;
   --line: rgba(25, 24, 23, 0.18);
-  --serif: "Iowan Old Style", "Baskerville", "Times New Roman", serif;
-  --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+  --serif: "Prata", "Iowan Old Style", Georgia, "Times New Roman", serif;
+  --sans: "Golos Text", -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
 }
 
 * { box-sizing: border-box; }
@@ -198,9 +198,9 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 400; }
 h1 {
   max-width: 760px;
   margin-bottom: clamp(.65rem, 2.2vh, 1.7rem);
-  font-size: clamp(2.55rem, min(5.2vw, 8.4vh), 6.2rem);
-  line-height: .92;
-  letter-spacing: -.045em;
+  font-size: clamp(2.15rem, min(4.35vw, 7.1vh), 5.1rem);
+  line-height: .98;
+  letter-spacing: -.005em;
 }
 .hero-intro {
   max-width: 610px;
@@ -231,7 +231,7 @@ h1 {
   --direction-color: var(--hero-accent);
   position: relative;
   display: grid;
-  grid-template-columns: 42px minmax(0, 1fr) 24px;
+  grid-template-columns: minmax(0, 1fr) 24px;
   gap: 1rem;
   align-items: center;
   min-height: clamp(62px, 10.5vh, 92px);
@@ -262,7 +262,7 @@ h1 {
 }
 .direction-link.is-active { padding-left: .65rem; }
 .direction-link.is-active::before { transform: scaleY(1); }
-.direction-index { color: currentColor; opacity: .72; font-family: var(--serif); font-size: .8rem; font-style: italic; }
+.direction-index { color: currentColor; opacity: .55; font-family: var(--sans); font-size: .62rem; letter-spacing: .14em; text-transform: uppercase; }
 .direction-copy { display: flex; flex-direction: column; min-width: 0; }
 .direction-copy strong { font-family: var(--serif); font-size: clamp(1.35rem, 2vw, 1.85rem); font-weight: 400; line-height: 1.08; }
 .direction-copy small { margin-top: .35rem; color: currentColor; opacity: .76; font-size: .78rem; line-height: 1.35; }
@@ -310,10 +310,10 @@ h1 {
   left: 3rem;
   z-index: 4;
   margin: 0;
-  font-family: var(--serif);
-  font-style: italic;
-  font-size: .8rem;
-  letter-spacing: .1em;
+  font-family: var(--sans);
+  font-size: .64rem;
+  letter-spacing: .16em;
+  text-transform: uppercase;
 }
 .stage-card {
   position: absolute;
@@ -364,7 +364,7 @@ h1 {
   margin-bottom: 0;
   font-size: clamp(2.6rem, 5vw, 5.6rem);
   line-height: .96;
-  letter-spacing: -.035em;
+  letter-spacing: 0;
 }
 .section-heading > p { max-width: 460px; margin: 0; color: #625e58; }
 
@@ -411,7 +411,7 @@ h1 {
 .product-card:hover .product-visual img { transform: scale(1.035); }
 .product-card-featured .product-visual img { width: 72%; height: 72%; }
 .product-visual.burgundy { background: #6b2029; }
-.product-visual.burgundy img { mix-blend-mode: normal; filter: drop-shadow(0 28px 22px rgba(0,0,0,.24)); }
+.product-visual.burgundy img { mix-blend-mode: normal; filter: drop-shadow(0 30px 26px rgba(0,0,0,.34)); }
 .product-visual.ivory { background: #ede9df; }
 .product-visual.amber { background: #d9c3a2; }
 .product-visual.sand { background: #c7b29b; }
@@ -427,7 +427,7 @@ h1 {
 }
 .product-meta p { margin-bottom: .35rem; color: #716b64; font-size: .65rem; letter-spacing: .12em; text-transform: uppercase; }
 .product-meta h3 { margin-bottom: 0; font-size: 1.45rem; }
-.product-meta > span { color: #837d74; font-family: var(--serif); font-style: italic; }
+.product-meta > span { color: #9a948b; font-family: var(--sans); font-size: .68rem; letter-spacing: .12em; }
 .list-visual { align-content: center; justify-items: stretch; padding: 2rem 3rem; background: var(--ink); }
 .list-visual p { width: 100%; margin: 0; padding: 1.2rem 0; color: var(--ivory); border-bottom: 1px solid rgba(255,255,255,.2); font-family: var(--serif); font-size: clamp(1.3rem, 2.2vw, 2rem); }
 
@@ -458,7 +458,7 @@ h1 {
 .private-intro > p:not(.eyebrow) { max-width: 610px; margin: 2rem 0 2.4rem; color: #d2c7be; font-size: 1.05rem; }
 .process-list { margin: 0; padding: 0; list-style: none; border-top: 1px solid rgba(255,255,255,.24); }
 .process-list li { display: grid; grid-template-columns: 60px 1fr; gap: 1rem; padding: 2rem 0; border-bottom: 1px solid rgba(255,255,255,.24); }
-.process-list li > span { color: var(--brass); font-family: var(--serif); font-style: italic; }
+.process-list li > span { color: var(--brass); font-family: var(--sans); font-size: .68rem; letter-spacing: .14em; padding-top: .45rem; }
 .process-list h3 { margin-bottom: .5rem; font-size: 1.7rem; }
 .process-list p { margin-bottom: 0; color: #d2c7be; }
 .production-options { grid-column: 1 / -1; display: grid; grid-template-columns: 1fr 1fr; gap: 1px; margin-top: 1rem; background: rgba(255,255,255,.24); }
@@ -473,7 +473,7 @@ h1 {
 .atelier-image span { position: absolute; left: 1.5rem; bottom: 1.5rem; padding: .7rem 1rem; color: #fff; background: rgba(25,24,23,.84); font-size: .64rem; letter-spacing: .12em; text-transform: uppercase; }
 .atelier-copy .lead { max-width: 620px; margin: 2rem 0 3rem; color: #514d48; font-size: 1.08rem; }
 .atelier-services { border-top: 1px solid var(--line); }
-.atelier-services a { display: grid; grid-template-columns: 55px 1fr; gap: 1rem; padding: 1.35rem 0; border-bottom: 1px solid var(--line); font-family: var(--serif); font-size: 1.45rem; text-decoration: none; }
+.atelier-services a { display: grid; grid-template-columns: 1fr; gap: 1rem; padding: 1.35rem 0; border-bottom: 1px solid var(--line); font-family: var(--serif); font-size: 1.45rem; text-decoration: none; }
 .atelier-services span { color: #877d70; font-family: var(--sans); font-size: .65rem; letter-spacing: .12em; }
 .atelier-services a:hover { padding-left: .6rem; }
 
@@ -623,7 +623,7 @@ h1 {
 }
 .numbered-grid li { min-height: 260px; padding: clamp(1.7rem, 3vw, 3rem); border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .numbered-grid span,
-.service-card > span { color: #827a70; font-family: var(--serif); font-style: italic; }
+.service-card > span { color: #827a70; font-family: var(--sans); font-size: .68rem; letter-spacing: .14em; }
 .numbered-grid h3 { margin: 4rem 0 .8rem; font-size: clamp(1.6rem, 2.5vw, 2.5rem); }
 .numbered-grid p { max-width: 420px; margin: 0; color: #625e58; }
 
@@ -654,7 +654,7 @@ h1 {
 .process-section { background: var(--ivory); }
 .process-timeline { margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--line); }
 .process-timeline li { display: grid; grid-template-columns: 80px minmax(0, 1fr); gap: 2rem; padding: 2rem 0; border-bottom: 1px solid var(--line); }
-.process-timeline li > span { color: #817a71; font-family: var(--serif); font-style: italic; }
+.process-timeline li > span { color: #817a71; font-family: var(--sans); font-size: .68rem; letter-spacing: .14em; }
 .process-timeline h3 { margin-bottom: .35rem; font-size: clamp(1.55rem, 2.5vw, 2.5rem); }
 .process-timeline p { max-width: 760px; margin: 0; color: #625e58; }
 
@@ -672,7 +672,7 @@ h1 {
 .service-section { background: var(--ivory); }
 .service-grid { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
 .service-card { min-height: 340px; display: flex; flex-direction: column; align-items: flex-start; padding: clamp(1.5rem, 3vw, 3rem); border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
-.service-card h3 { margin: 3.6rem 0 1rem; font-size: clamp(1.8rem, 3vw, 3rem); line-height: 1.03; }
+.service-card h3 { margin: 2.1rem 0 1rem; font-size: clamp(1.8rem, 3vw, 3rem); line-height: 1.03; }
 .service-card p { flex: 1; color: #625e58; }
 .service-card b { font-weight: 400; }
 .brand-fragrance { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(3rem, 8vw, 8rem); align-items: center; }
@@ -711,7 +711,7 @@ h1 {
   to { opacity: 1; transform: translate3d(0, 0, 0); }
 }
 
-@media (min-width: 1101px) and (max-height: 800px) {
+@media (min-width: 1001px) and (max-height: 800px) {
   .hero-copy { padding-top: 1.25rem; padding-bottom: 1.25rem; }
   .hero-copy .eyebrow { margin-bottom: .8rem; }
   h1 { margin-bottom: 1rem; font-size: clamp(3rem, 4.25vw, 4.6rem); }
@@ -722,7 +722,7 @@ h1 {
   .direction-copy small { margin-top: .2rem; font-size: .7rem; }
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1000px) {
   .site-header { grid-template-columns: 1fr auto; }
   .main-nav {
     position: fixed;
@@ -778,7 +778,7 @@ h1 {
   h1 { margin-bottom: .55rem; font-size: clamp(2.15rem, min(10.8vw, 6vh), 3.2rem); line-height: .94; }
   .hero-intro { margin-bottom: .25rem; font-size: .9rem; line-height: 1.35; }
   .direction-list { margin-top: .45rem; }
-  .direction-link { min-height: clamp(50px, 7.6vh, 64px); grid-template-columns: 27px minmax(0, 1fr) 18px; gap: .55rem; padding: .45rem .15rem; }
+  .direction-link { min-height: clamp(50px, 7.6vh, 64px); grid-template-columns: minmax(0, 1fr) 18px; gap: .55rem; padding: .45rem .15rem; }
   .direction-copy strong { font-size: clamp(1.08rem, 4.8vw, 1.3rem); }
   .direction-copy small { margin-top: .08rem; font-size: .66rem; line-height: 1.2; }
   .hero-stage { min-height: 0; }
@@ -805,7 +805,7 @@ h1 {
   .site-footer { grid-template-columns: 1fr; justify-items: start; }
   .site-footer > a:last-child { justify-self: start; }
   .page-hero-copy { padding: 4.5rem 1.25rem; }
-  .page-hero-copy h1 { font-size: clamp(2.35rem, 11vw, 3.2rem); overflow-wrap: break-word; }
+  .page-hero-copy h1 { font-size: clamp(2.1rem, 9.4vw, 3.2rem); overflow-wrap: normal; hyphens: auto; }
   .page-hero-media { min-height: 122vw; max-height: 680px; }
   .page-photo-main { width: 82%; right: 4%; top: 10%; }
   .page-photo-product { width: 39%; height: 49%; left: 4%; }
@@ -830,9 +830,358 @@ h1 {
   .inquiry-form .field-wide { grid-column: auto; }
 }
 
+
+/* ============================================================
+   Появление и движение
+   Одна кривая и две длительности на весь сайт: 1.1s — появление,
+   .7s — реакция на курсор. Никаких пружин и подпрыгиваний.
+   ============================================================ */
+
+:root {
+  --ease-lux: cubic-bezier(.16, 1, .3, 1);
+  --t-enter: 1.1s;
+  --t-hover: .7s;
+}
+
+/* Текст поднимается коротко — 14px вместо 30px.
+   Длинный ход читается как «слайд», короткий — как проявление. */
+.has-js .reveal {
+  transform: translate3d(0, 14px, 0);
+  transition:
+    opacity var(--t-enter) var(--ease-lux),
+    transform var(--t-enter) var(--ease-lux);
+}
+.has-js .reveal.reveal-left { transform: translate3d(-18px, 0, 0); }
+
+/* Изображения открываются срезом снизу вверх и одновременно
+   садятся из 1.06 в 1.0 — кадр «дышит», рамка неподвижна. */
+.has-js .product-card .product-visual,
+.has-js .brand-card .brand-image,
+.has-js .atelier-image img {
+  clip-path: inset(0 0 100% 0);
+  transition: clip-path var(--t-enter) var(--ease-lux);
+}
+.has-js .reveal.is-visible .product-visual,
+.has-js .reveal.is-visible .brand-image,
+.has-js .atelier-image.is-visible img {
+  clip-path: inset(0 0 0 0);
+}
+
+.has-js .product-card .product-visual img,
+.has-js .brand-card .brand-image img {
+  transform: scale(1.06);
+  transition: transform var(--t-enter) var(--ease-lux);
+}
+.has-js .reveal.is-visible .product-visual img,
+.has-js .reveal.is-visible .brand-image img { transform: scale(1); }
+
+/* Курсор: двигается только фотография, рамка стоит на месте. */
+.has-js .reveal.is-visible.product-card:hover .product-visual img,
+.has-js .reveal.is-visible.brand-card:hover .brand-image img {
+  transform: scale(1.04);
+  transition-duration: var(--t-hover);
+}
+
+/* Подчёркивание растёт слева направо, а не появляется целиком. */
+.main-nav a::after,
+.header-contact::after { transition: right var(--t-hover) var(--ease-lux); }
+
+/* Первый экран: reveal на него не вешается, поэтому собственный каскад.
+   Строки входят по очереди с шагом 80ms — один раз, на загрузке. */
+@keyframes lux-rise {
+  from { opacity: 0; transform: translate3d(0, 18px, 0); }
+  to   { opacity: 1; transform: none; }
+}
+@keyframes lux-open {
+  from { clip-path: inset(0 0 100% 0); transform: scale(1.05); }
+  to   { clip-path: inset(0 0 0 0);    transform: scale(1); }
+}
+.has-js .hero-copy > * {
+  animation: lux-rise .95s var(--ease-lux) both;
+}
+.has-js .hero-copy > *:nth-child(1) { animation-delay: .08s; }
+.has-js .hero-copy > *:nth-child(2) { animation-delay: .16s; }
+.has-js .hero-copy > *:nth-child(3) { animation-delay: .24s; }
+.has-js .hero-copy > *:nth-child(4) { animation-delay: .32s; }
+.has-js .stage-scene.is-active .stage-card,
+.has-js .stage-scene.is-active .stage-package,
+.has-js .stage-scene.is-active .stage-perfumer {
+  animation: lux-open var(--t-enter) var(--ease-lux) .3s both;
+}
+.has-js .stage-scene.is-active .stage-product {
+  animation: lux-rise var(--t-enter) var(--ease-lux) .5s both;
+}
+
+/* Шапка: фон уплотняется переходом, а не скачком. */
+.site-header {
+  transition:
+    background-color var(--t-hover) var(--ease-lux),
+    box-shadow var(--t-hover) var(--ease-lux);
+}
+.site-header.is-scrolled {
+  background: rgba(251, 250, 246, .88);
+  box-shadow: 0 1px 0 var(--line), 0 18px 40px -34px rgba(25, 24, 23, .55);
+}
+
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; }
   .has-js .reveal,
   .has-js .reveal.reveal-left { opacity: 1; transform: none; }
+  .has-js .hero-copy > *,
+  .has-js .stage-scene.is-active .stage-card,
+  .has-js .stage-scene.is-active .stage-package,
+  .has-js .stage-scene.is-active .stage-perfumer,
+  .has-js .stage-scene.is-active .stage-product { animation: none; }
+  .has-js .product-card .product-visual,
+  .has-js .brand-card .brand-image,
+  .has-js .atelier-image img { clip-path: none; }
+  .has-js .product-card .product-visual img,
+  .has-js .brand-card .brand-image img { transform: none; }
+}
+
+/* ─── Доработка 23.09.2026 ─────────────────────────────────────────────── */
+
+/* Первый экран внутренних страниц: колонка сетки не должна раздвигать страницу
+   шире вьюпорта (на 390px каталог уезжал вправо на 14px). */
+.page-hero > * { min-width: 0; }
+.page-hero-media { max-width: 100%; }
+
+/* Хлебные крошки внутренних страниц */
+.crumbs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  align-items: center;
+  padding: 1.1rem 4vw;
+  border-bottom: 1px solid var(--line);
+  font-size: .68rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: #6c6862;
+}
+.crumbs a { text-decoration: none; border-bottom: 1px solid transparent; transition: border-color .3s ease; }
+.crumbs a:hover, .crumbs a:focus-visible { border-bottom-color: currentColor; }
+.crumbs span[aria-current] { color: var(--ink); }
+.crumbs i { font-style: normal; opacity: .45; }
+
+/* Главная: три направления */
+.direction-blocks {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  background: var(--line);
+  border: 1px solid var(--line);
+}
+.direction-block { min-width: 0; background: var(--paper); }
+.direction-block > a {
+  display: block;
+  height: 100%;
+  padding: 0 0 2.4rem;
+  text-decoration: none;
+}
+.direction-block-media {
+  height: clamp(300px, 30vw, 460px);
+  margin-bottom: 1.8rem;
+  overflow: hidden;
+  background: #ede9df;
+}
+.direction-block-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .7s cubic-bezier(.16, 1, .3, 1);
+}
+.direction-block > a:hover .direction-block-media img,
+.direction-block > a:focus-visible .direction-block-media img { transform: scale(1.04); }
+.direction-block .eyebrow,
+.direction-block h3,
+.direction-block > a > p,
+.direction-block-cta { padding-inline: clamp(1.25rem, 2vw, 2rem); }
+.direction-block h3 {
+  margin: .5rem 0 .7rem;
+  font-family: var(--serif);
+  font-size: clamp(1.4rem, 1.7vw, 1.85rem);
+  font-weight: 400;
+  line-height: 1.15;
+}
+.direction-block > a > p { margin: 0 0 1.5rem; color: #625e58; font-size: .95rem; }
+.direction-block-cta {
+  display: inline-flex;
+  gap: .55rem;
+  align-items: center;
+  font-size: .72rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+.direction-block-cta b { font-weight: 400; transition: transform .45s cubic-bezier(.16, 1, .3, 1); }
+.direction-block > a:hover .direction-block-cta b,
+.direction-block > a:focus-visible .direction-block-cta b { transform: translateX(5px); }
+.direction-block > a:focus-visible { outline: 2px solid var(--wine); outline-offset: -4px; }
+
+/* Главная: переход в каталог */
+.catalog-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem 3rem;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2.2rem;
+}
+.catalog-cta p { max-width: 430px; margin: 0; color: #625e58; font-size: .92rem; }
+.catalog-cta .button { gap: .55rem; }
+
+/* Подсказка переключения направлений на сенсорном экране */
+.direction-hint { display: none; }
+@media (hover: none) {
+  .direction-hint {
+    display: block;
+    margin: .5rem 0 0;
+    font-size: .64rem;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--hero-muted);
+  }
+}
+
+/* Каталог: панель фильтров и поиска */
+.catalog-toolbar {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(230px, 300px);
+  gap: 1.5rem 2rem;
+  align-items: end;
+  margin-bottom: 2rem;
+}
+.filter-group { margin: 0 0 .9rem; }
+.filter-group:last-of-type { margin-bottom: 0; }
+.filter-group-label {
+  margin: 0 0 .55rem;
+  font-size: .62rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: #6c6862;
+}
+.catalog-toolbar .filters { margin-bottom: 0; }
+.catalog-search { display: grid; gap: .5rem; }
+.catalog-search label {
+  font-size: .62rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: #6c6862;
+}
+.catalog-search input {
+  width: 100%;
+  padding: .8rem 1rem;
+  color: var(--ink);
+  background: transparent;
+  border: 1px solid var(--line);
+  border-radius: 0;
+  font: inherit;
+  font-size: .92rem;
+}
+.catalog-search input:focus-visible { outline: 2px solid var(--wine); outline-offset: -2px; }
+.catalog-count {
+  margin: 0 0 1.2rem;
+  font-size: .78rem;
+  color: #6c6862;
+}
+.catalog-empty {
+  padding: 3rem 1.5rem;
+  border: 1px solid var(--line);
+  text-align: center;
+  color: #625e58;
+}
+.catalog-empty[hidden] { display: none; }
+
+/* СТМ: редакционный разворот */
+.showroom-spread {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+  gap: clamp(2rem, 5vw, 5rem);
+  align-items: center;
+  padding: clamp(5rem, 9vw, 9rem) 4vw;
+  border-top: 1px solid var(--line);
+}
+.showroom-spread-media { position: relative; }
+.showroom-spread-media img {
+  width: 100%;
+  height: clamp(340px, 40vw, 620px);
+  object-fit: cover;
+  background: #ede9df;
+}
+.showroom-spread-media figcaption {
+  margin-top: .9rem;
+  font-size: .68rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: #6c6862;
+}
+.showroom-spread h2 {
+  margin: .6rem 0 1.3rem;
+  font-size: clamp(2.1rem, 3.6vw, 3.6rem);
+  line-height: 1.02;
+}
+.showroom-spread p { margin: 0 0 1.1rem; max-width: 46ch; color: #4a4642; }
+.showroom-spread dl {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.4rem 2rem;
+  margin: 2rem 0 0;
+  padding-top: 1.8rem;
+  border-top: 1px solid var(--line);
+}
+.showroom-spread dt {
+  margin-bottom: .35rem;
+  font-size: .64rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: #6c6862;
+}
+.showroom-spread dd { margin: 0; font-size: .95rem; line-height: 1.45; }
+
+/* Ателье: редакционный ввод */
+.atelier-lede {
+  padding: clamp(4rem, 8vw, 8rem) 4vw clamp(2.5rem, 5vw, 5rem);
+  border-top: 1px solid var(--line);
+}
+.atelier-lede p {
+  max-width: 20ch;
+  margin: 0;
+  font-family: var(--serif);
+  font-size: clamp(1.9rem, 4.4vw, 4rem);
+  line-height: 1.08;
+}
+.atelier-lede p em { font-style: normal; color: var(--wine); }
+.atelier-lede footer {
+  margin-top: 1.6rem;
+  max-width: 44ch;
+  color: #625e58;
+  font-size: .95rem;
+}
+
+@media (max-width: 1000px) {
+  .direction-blocks { grid-template-columns: 1fr; }
+  .direction-block-media { height: 58vw; max-height: 420px; }
+  .catalog-toolbar { grid-template-columns: 1fr; align-items: start; }
+  .showroom-spread { grid-template-columns: 1fr; }
+  .showroom-spread-media img { height: 62vw; max-height: 520px; }
+}
+
+@media (max-width: 760px) {
+  .crumbs { padding: .9rem 1.25rem; font-size: .62rem; }
+  /* На узком экране сцена первого экрана всего ~220px: подпись ложилась поверх
+     карточки с фото. Её текст дублирует описание направления в списке слева. */
+  .stage-caption { display: none; }
+  .direction-block-media { height: 74vw; max-height: 460px; }
+  .catalog-cta { margin-top: 1.8rem; }
+  .catalog-cta .button { width: 100%; justify-content: center; text-align: center; }
+  .showroom-spread { padding: 4.5rem 1.25rem; }
+  .showroom-spread dl { grid-template-columns: 1fr; gap: 1.1rem; }
+  .atelier-lede { padding: 4rem 1.25rem 2.5rem; }
+  .atelier-lede p { max-width: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .direction-block-media img,
+  .direction-block-cta b { transition: none; }
 }
